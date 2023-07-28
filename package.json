@@ -1,0 +1,22 @@
+{
+  "name": "whistle-for-android",
+  "version": "1.0.0",
+  "description": "安卓环境下抓包",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node start/index.js",
+    "build": "node node_script/build.js",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "whistle": "^2.9.55",
+    "whistle.http-handle": "^1.0.8"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
+  }
+}

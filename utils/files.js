@@ -1,6 +1,7 @@
 const fs = require("fs-extra");
 const path = require("path");
 const os = require("os");
+const chalk = require("chalk");
 async function moveFilesWithWhistle() {
   const sourceDir = "/data/misc/user/0/cacerts-added/";
   const targetDir = "/etc/security/cacerts/";
@@ -36,7 +37,7 @@ async function copyAssets() {
       overwrite: true
     });
 
-    console.log("Assets copied successfully.");
+    console.log(`初始化:${chalk.green(targetDir)}`);
   } catch (error) {
     console.error("An error occurred:", error);
   }

@@ -24,7 +24,7 @@ Module.prototype._compile = function (content, filename) {
     // console.log(filename);
     // 修改模块内的 exports.extend 方法
     // console.log(content.includes("emitAborted(data, reqEmitter, 'captureError');"));
-    const modifiedCode = content.replace("emitAborted(data, reqEmitter, 'captureError');", "// emitAborted(data, reqEmitter, 'captureError');");
+    const modifiedCode = content.replace("config.captureData && dispatch.getTunnelDataOnce(reqSocket)", "false");
     content = modifiedCode;
   }
   // 调用原始的 _compile 方法

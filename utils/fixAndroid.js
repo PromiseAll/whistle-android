@@ -33,6 +33,7 @@ Module.prototype._compile = function (content, filename) {
 
 os.isAndroid = os.platform().includes("android");
 if (os.isAndroid) {
+  process.env.HOME = "/sdcard";
   os.homedir = () => "/sdcard";
   os.tmpdir = () => "/sdcard/.temp/";
   // process.env.WHISTLE_PATH = path.join(os.homedir(), "http-handle/WhistleAppData");

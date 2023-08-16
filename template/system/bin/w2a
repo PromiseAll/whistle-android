@@ -1,0 +1,4 @@
+#!/system/bin/sh
+
+# 切换为root用户并执行命令
+/system/bin/su -c "exec node /system/bin/node_modules/whistle-android/start/index.js $@"

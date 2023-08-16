@@ -1,0 +1,7 @@
+{
+  "upgrade": false,
+  "format": "group",
+  "reject": [
+    "chalk"
+  ]
+}
